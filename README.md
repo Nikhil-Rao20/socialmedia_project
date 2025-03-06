@@ -71,14 +71,12 @@ Replace `your_secret_key`, `your_email@example.com`, and `your_email_password` w
 
 1. **Set the Flask app environment variable:**:
 
-   ```bash
+      ```bash
    export FLASK_APP=run.py  # On Windows: set FLASK_APP=run.py
-   export FLASK_ENV=development  # Enables debug mode
-
-   
+   export FLASK_ENV=development  # Enables debug mode   
 2. **Run the Flask application:**:
 
-      ```bash
+      ``` bash 
    flask run
 The application will be accessible at http://127.0.0.1:5000/.
 
@@ -119,11 +117,9 @@ The application will be accessible at http://127.0.0.1:5000/.
 ## 🧪 Testing
 
 To run the test suite:
-
-      ```bash
-   pytest
-
-
+  
+      pytest
+   
 Ensure you have pytest installed in your environment.
 
 
