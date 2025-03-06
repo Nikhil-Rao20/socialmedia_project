@@ -38,14 +38,10 @@ Follow these instructions to set up and run the project locally.
       ```bash
    python -m venv env
    source env/bin/activate  # On Windows: env\Scripts\activate
-
-
 3. **Install the required packages:**
 
      ```bash
        pip install -r requirements.txt
-
-
 ---
 
 ### Configuration
@@ -70,9 +66,6 @@ Replace `your_secret_key`, `your_email@example.com`, and `your_email_password` w
    flask db init
    flask db migrate -m "Initial migration."
    flask db upgrade
-
-
-
 ### Running the Application
 
 
@@ -87,39 +80,38 @@ Replace `your_secret_key`, `your_email@example.com`, and `your_email_password` w
 
       ```bash
    flask run
-
-
 The application will be accessible at http://127.0.0.1:5000/.
 
 
 ## 📂 Project Structure
 
-📂 socialmedia_project/
-│
-├── 📁 flaskblog/               # Main application folder
-│   ├── 📄 __init__.py          # App initialization
-│   ├── 📄 forms.py             # Flask WTF forms
-│   ├── 📄 models.py            # Database models
-│   ├── 📄 routes.py            # Application routes
-│   ├── 📁 static/              # Static assets (CSS, images, etc.)
-│   │   ├── 📁 profile_pics/    # User profile images
-│   │   └── 🎨 main.css         # Stylesheet
-│   ├── 📁 templates/           # HTML Templates
-│   │   ├── 🏠 home.html        # Homepage
-│   │   ├── 🔑 login.html       # Login page
-│   │   ├── 📜 register.html    # Registration page
-│   │   ├── 📝 post.html        # Blog post page
-│   │   ├── 👤 profile.html     # User profile page
-│   │   └── 📄 layout.html      # Base layout template
-│
-├── 📁 migrations/              # Database migrations
-├── 📁 instance/                # Local database storage
-│   └── 🗄️ site.db              # SQLite database file
-├── 📝 .env                     # Environment variables
-├── ⚙️ config.py                 # Application configurations
-├── 🚀 run.py                   # Flask application entry point
-├── 📜 requirements.txt         # Dependencies
-└── 📝 README.md                # Project documentation
+      
+      📂 socialmedia_project/
+      │
+      ├── 📁 flaskblog/               # Main application folder
+      │   ├── 📄 __init__.py          # App initialization
+      │   ├── 📄 forms.py             # Flask WTF forms
+      │   ├── 📄 models.py            # Database models
+      │   ├── 📄 routes.py            # Application routes
+      │   ├── 📁 static/              # Static assets (CSS, images, etc.)
+      │   │   ├── 📁 profile_pics/    # User profile images
+      │   │   └── 🎨 main.css         # Stylesheet
+      │   ├── 📁 templates/           # HTML Templates
+      │   │   ├── 🏠 home.html        # Homepage
+      │   │   ├── 🔑 login.html       # Login page
+      │   │   ├── 📜 register.html    # Registration page
+      │   │   ├── 📝 post.html        # Blog post page
+      │   │   ├── 👤 profile.html     # User profile page
+      │   │   └── 📄 layout.html      # Base layout template
+      │
+      ├── 📁 migrations/              # Database migrations
+      ├── 📁 instance/                # Local database storage
+      │   └── 🗄️ site.db              # SQLite database file
+      ├── 📝 .env                     # Environment variables
+      ├── ⚙️ config.py                 # Application configurations
+      ├── 🚀 run.py                   # Flask application entry point
+      ├── 📜 requirements.txt         # Dependencies
+      └── 📝 README.md                # Project documentation
 
 
 
